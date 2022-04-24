@@ -284,7 +284,7 @@
           <p class="solid">
             Alt tarafta oluşturduğum butona basarsanız sol tarafa doğru açılan bir açılır menü örneği göreceksiniz.
           Diğer açılır menülere göre sağa doğru açılan menümüzde carot yerine arrow komutunu kullandık.</p>
-          <div class="dropdown dropleft float-right">
+          <div class="dropdown dropleft">
             <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
               Dropleft button
             <span class="arrow"></span></button>
@@ -294,8 +294,93 @@
               <a href="#">Link 3</a>
             </div>
           </div>
-    
+          <pre style="background-color: black;">
+            <code><code style="color: darkgreen;"> 
+              &ltdiv class="dropdown ">
+              &ltbutton type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                  Dropleft button
+                  &ltspan class="arrow">&lt/span>&lt/button>
+                  &ltdiv class="dropdown-menu">
+                  &lta href="#">Link 1&lt/a>
+                  &lta href="#">Link 2&lt/a>
+                  &lta href="#">Link 3&lt/a>
+                  &lt/div>
+                  &lt/div>
+        </code>
+          </code>
+          </pre>
+
+          <h2>Dropdown açılan kısıma başlık ekleme</h2>
+          <p class="solid">.dropdown-header sınıfı, açılır menüye başlık eklemek ve kısımlara ayırmak için kullanılır.
+          Örneğin bir sitede profil kısmı oluşturacağınız zaman alt tarafta bulunan kısımdaki gibi dropdown menu yapabilirsiniz.
+          "divider" komutu ile memü sekmelerini ayırıp "dropdown-header" ile de başlık açtık.
+         </p>
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Profilim
+            <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li class="dropdown-header">Hesap Ayarları</li>
+              <li><a href="#">Abonelikler</li>
+              <li><a href="#">Profili düzenle</a></li>
+              <li><a href="#">Şifre değiştir</a></li>
+              <li class="divider"></li>
+              <li class="dropdown-header"></li>
+              <li><a href="#">Geri bildirim gönder</a></li>
+              <li><a href="#">Çıkış yap</a></li>
+        
+            </ul>
           </div>
+        </div>
+        <pre style="background-color: black;">
+          <code><code style="color: darkgreen;"> 
+            &ltdiv class="dropdown">
+            &ltbutton class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Profilim
+            &ltspan class="caret">&lt/span>&lt/button>
+            &ltul class="dropdown-menu">
+            &ltli class="dropdown-header">Hesap Ayarları&lt/li>
+            &ltli>&lta href="#">Abonelikler&lt/li>
+              &ltli>&lta href="#">Profili düzenle&lt/a>&lt/li>
+              &ltli>&lta href="#">Şifre değiştir&lt/a>&lt/li>
+              &ltli class="divider">&lt/li>
+              &ltli class="dropdown-header">&lt/li>
+              &ltli>&lta href="#">Geri bildirim gönder&lt/a>&lt/li>
+              &ltli>&lta href="#">Çıkış yap&lt/a>&lt/li>
+      </code>
+        </code>
+        </pre>
+        <h2>Dropdown menüde aktif ve pasif butonlar oluşturma</h2>
+        <p class="solid">".active" sınıfı, etkin bağlantıya mavi bir arka plan rengi ekler.
+        Açılır öğeyi devre dışı bırakır ve devre dışı olduğunu göstermek için yazıya gri bir renk ekler</p>
+        <div class="dropdown">
+          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Ayarlar
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Profili düzenle</li>
+            <li class="active"><a href="#">Hesabı dondur</a></li>
+            <li class="disabled"><a href="#">Hesabı sil</a></li>
+            <li><a href="#">Hesap değiştir</a></li>
+          </ul>
+        </div>
+      </div>
+      <pre style="background-color: black;">
+        <code><code style="color: darkgreen;"> 
+          &ltiv class="dropdown">
+          &ltbutton class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Ayarlar
+          &ltspan class="caret">&lt/span>&lt/button>
+          &ltul class="dropdown-menu">
+          &ltli>&lta href="#">Profili düzenle&lt/li>
+          &ltli class="active">&lta href="#">Hesabı dondur&lt/a>&lt/li>
+          &ltli class="disabled">&lta href="#">Hesabı sil&lt/a>&lt/li>
+                &ltli>&lta href="#">Hesap değiştir&lt/a>&lt/li>
+                &ltul>
+                &lt/div>
+    </code>
+      </code>
+      </pre>
+
+
+            </div>
+          
     
 
 </body>
